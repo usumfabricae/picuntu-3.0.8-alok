@@ -1,4 +1,0 @@
-kernel/drivers/video/rockchip/rk_fb.ko
-kernel/drivers/video/rockchip/rkfb_sysfs.ko
-kernel/drivers/video/rockchip/chips/rk30_lcdc.ko
-kernel/drivers/video/rockchip/rga/rga.ko
