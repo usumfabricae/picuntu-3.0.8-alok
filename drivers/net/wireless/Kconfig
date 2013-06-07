@@ -348,6 +348,19 @@ choice
 	      (3) USI        WM-G-MR-09
 	      (4) Murata     SP-8HEP-P
 
+   config MT5931
+          depends on WLAN_80211 && MMC
+          select WIRELESS_EXT
+          select WEXT_PRIV
+          select IEEE80211
+          select FW_LOADER
+          bool "MTK MT5931 SDIO"
+          ---help---
+                A library for MTK MT5931 SDIO WLAN devices.
+                So far, the following modules have been verified: MTK5931
+
+
+
 source "drivers/net/wireless/rkusbwifi/rtl8192cu/Kconfig"
 source "drivers/net/wireless/rkusbwifi/rtl8188eu/Kconfig"
 source "drivers/net/wireless/ar6003/Kconfig"

@@ -2,7 +2,7 @@
 # Makefile for the Linux Wireless network device drivers.
 #
 
-obj-y += wifi_sys/rkwifi_sys_iface.o
+#obj-y += wifi_sys/rkwifi_sys_iface.o
 
 obj-$(CONFIG_IPW2100) += ipw2x00/
 obj-$(CONFIG_IPW2200) += ipw2x00/

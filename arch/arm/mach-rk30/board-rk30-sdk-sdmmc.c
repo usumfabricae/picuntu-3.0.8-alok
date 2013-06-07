@@ -234,7 +234,7 @@ static void *wifi_status_cb_devid;
 #ifdef CONFIG_MT5931
 //#define RK30SDK_WIFI_GPIO_POWER_N       RK30_PIN0_PD5
 //#define RK30SDK_WIFI_GPIO_RESET_N       RK30_PIN0_PC7
-//FDA
+//FDA iMito MX1
 #define RK30SDK_WIFI_GPIO_POWER_N      RK30_PIN3_PC7//RK30_PIN3_PD0
 #define RK30SDK_WIFI_GPIO_RESET_N      RK30_PIN3_PD1
 
