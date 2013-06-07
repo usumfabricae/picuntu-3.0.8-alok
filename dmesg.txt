@@ -1,0 +1,618 @@
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.0.8-alok+ (fede@nick-linux) (gcc version 4.6 20120106 (prerelease) (GCC) ) #2 SMP PREEMPT Fri Jun 7 22:44:52 CEST 2013
+[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: RK30board
+[    0.000000] Ignoring tag cmdline (using the default kernel command line)
+[    0.000000] memory reserve: Memory(base:0x94000000 size:40M) reserved for <ion>
+[    0.000000] memory reserve: Memory(base:0x93000000 size:16M) reserved for <fb0>
+[    0.000000] memory reserve: Memory(base:0x91000000 size:32M) reserved for <ipp buf>
+[    0.000000] memory reserve: Memory(base:0x90800000 size:8M) reserved for <camera_ipp_mem>
+[    0.000000] memory reserve: Memory(base:0x8f400000 size:20M) reserved for <pmem_cam>
+[    0.000000] memory reserve: Total reserved 116M
+[    0.000000] Memory policy: ECC disabled, Data cache writeback
+[    0.000000] bootconsole [earlycon0] enabled
+[    0.000000] CPU SRAM: copied sram code from c0e5d000 to fef00100 - fef0247c
+[    0.000000] CPU SRAM: copied sram data from c0e5f37c to fef03000 - fef0385c
+[    0.000000] L310 cache controller enabled
+[    0.000000] l2x0: 16 ways, CACHE_ID 0x4100c0c8, AUX_CTRL 0x76050001, Cache size: 524288 B
+[    0.000000] DDR DEBUG: version 1.00 20121016 
+[    0.000000] DDR DEBUG: DDR3 Device
+[    0.000000] DDR DEBUG: 1 CS, ROW=15, Bank=8, COL=10, Total Capability=1024MB
+[    0.000000] DDR DEBUG: init success!!! freq=648MHz
+[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x4, DGSL=1 extra clock, DGPS=360
+[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x3, DGSL=1 extra clock, DGPS=360
+[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x3, DGSL=1 extra clock, DGPS=360
+[    0.000000] DDR DEBUG: DTONE=0x1, DTERR=0x0, DTIERR=0x0, DTPASS=0x4, DGSL=1 extra clock, DGPS=270
+[    0.000000] DDR DEBUG: ZERR=0, ZDONE=0, ZPD=0x0, ZPU=0x0, OPD=0x0, OPU=0x0
+[    0.000000] DDR DEBUG: DRV Pull-Up=0xb, DRV Pull-Dwn=0xb
+[    0.000000] DDR DEBUG: ODT Pull-Up=0x2, ODT Pull-Dwn=0x2
+[    0.000000] rk30_iomux_init
+[    0.000000] Boot mode: 2 flag: 0xc3524203
+[    0.000000] On node 0 totalpages: 232448
+[    0.000000] free_area_init_node: node 0, pgdat c0e14e40, node_mem_map c1827000
+[    0.000000]   Normal zone: 1744 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 191792 pages, LIFO batch:31
+[    0.000000]   HighMem zone: 304 pages used for memmap
+[    0.000000]   HighMem zone: 38608 pages, LIFO batch:7
+[    0.000000] PERCPU: Embedded 7 pages/cpu @c202f000 s7168 r8192 d13312 u32768
+[    0.000000] pcpu-alloc: s7168 r8192 d13312 u32768 alloc=8*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 230400
+[    0.000000] Kernel command line: root=LABEL=linuxroot init=/sbin/init loglevel=8 rootfstype=ext4 rootwait mtdparts=rk29xxnand:0x00002000@0x00000000(parameter),0x00002000@0x00002000(misc),0x00004000@0x00004000(kernel),0x00008000@0x00008000(boot),0x00008000@0x00010000(recovery)
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] allocated 4194304 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] Memory: 756MB 152MB = 908MB total
+[    0.000000] Memory: 895980k/895980k available, 152596k reserved, 155648K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     DMA     : 0xff600000 - 0xffe00000   (   8 MB)
+[    0.000000]     vmalloc : 0xf7000000 - 0xfe800000   ( 120 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xf6800000   ( 872 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .init : 0xc0408000 - 0xc07bf000   (3804 kB)
+[    0.000000]       .text : 0xc07bf000 - 0xc0de7a70   (6307 kB)
+[    0.000000]       .data : 0xc0de8000 - 0xc0e15980   ( 183 kB)
+[    0.000000]        .bss : 0xc0e60040 - 0xc1826cc8   (10012 kB)
+[    0.000000] SLUB: Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:416
+[    0.000000] rk30_gpio_init: 176 gpio irqs in 6 banks
+[    0.000000] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 178956ms
+[    0.000000] Console: colour dummy device 80x30
+[    0.000000] console [tty0] enabled, bootconsole disabled
+[    0.010656] Calibrating delay loop (skipped) preset value.. 1631.46 BogoMIPS (lpj=8157341)
+[    0.010691] pid_max: default: 32768 minimum: 301
+[    0.010938] Mount-cache hash table entries: 512
+[    0.011546] Initializing cgroup subsys debug
+[    0.011568] Initializing cgroup subsys cpuacct
+[    0.011624] Initializing cgroup subsys memory
+[    0.011663] Initializing cgroup subsys devices
+[    0.011681] Initializing cgroup subsys freezer
+[    0.011698] Initializing cgroup subsys blkio
+[    0.011745] CPU: Testing write buffer coherency: ok
+[    0.102332] CPU1: Booted secondary processor
+[    0.102376] Brought up 2 CPUs
+[    0.102404] SMP: Total of 2 processors activated (3262.93 BogoMIPS).
+[    0.102795] devtmpfs: initialized
+[    0.110429] NET: Registered protocol family 16
+[    0.110477] last_log: 0xeecc0000 0xc0e64338
+[    0.211913] rk29sdk_wifi_bt_gpio_control_init: init finished
+[    0.224871] bio: create slab <bio-0> at 0
+[    0.225474] SCSI subsystem initialized
+[    0.225657] usbcore: registered new interface driver usbfs
+[    0.225737] usbcore: registered new interface driver hub
+[    0.225838] usbcore: registered new device driver usb
+[    0.226110] rk30_i2c rk30_i2c.0: i2c-0: RK30 I2C adapter
+[    0.226299] rk30_i2c rk30_i2c.1: i2c-1: RK30 I2C adapter
+[    0.226572] rk30_i2c rk30_i2c.2: i2c-2: RK30 I2C adapter
+[    0.226688] rk30_i2c rk30_i2c.3: i2c-3: RK30 I2C adapter
+[    0.226813] rk30_i2c rk30_i2c.4: i2c-4: RK30 I2C adapter
+[    0.226995] rk30-adc rk30-adc: rk30 adc: driver initialized
+[    0.227223] Advanced Linux Sound Architecture Driver Version 1.0.24.
+[    0.227889] cfg80211: Calling CRDA to update world regulatory domain
+[    0.228605] rk fb probe ok!
+[    0.267358] tps65910_pre_init,line=66
+[    0.271394] TPS65910 Set default voltage.
+[    0.273806] tps65910_pre_init,line=257
+[    0.288573] tps65910_post_init,line=265
+[    0.288594] tps65910_post_init:g_pmic_type=2
+[    0.302698] tps65910_post_init set vio vcc_io=3300000mV end
+[    0.303953] tps65910_post_init set vpll vdd11=2500000mV end
+[    0.305186] tps65910_post_init set vdig2 vdd11=1100000mV end
+[    0.306427] tps65910_post_init set vaux33 vcc_tp=3300000mV end
+[    0.309315] tps65910_post_init set vdd1 vdd_cpu=1200000mV end
+[    0.312200] tps65910_post_init set vdd2 vcc_ddr=1200000mV end
+[    0.313442] tps65910_post_init set vdig1 vcc18_cif=1800000mV end
+[    0.314684] tps65910_post_init set vaux1 vcc25_hdmi=2500000mV end
+[    0.315926] tps65910_post_init set vaux2 vcca33=3300000mV end
+[    0.317166] tps65910_post_init set vdac vccio_wl=1800000mV end
+[    0.319103] tps65910_post_init set vmmc vcc28_cif=2800000mV end
+[    0.319228] tps65910_post_init,line=358 END
+[    0.319247] tps65910_i2c_probe:irq=324,irq_base=352,gpio_base=352
+[    0.319329] rk1000_control_probe
+[    0.324210] i2c i2c-2: No ack, Maybe slave(addr: 0x40) not exist or abnormal power-on, retry 2...
+[    0.327073] i2c i2c-2: No ack, Maybe slave(addr: 0x40) not exist or abnormal power-on, retry 1...
+[    0.329934] i2c i2c-2: No ack, Maybe slave(addr: 0x40) not exist or abnormal power-on, retry 0...
+[    0.329967] rk1000_control_probe ok
+[    0.340132] tps65910-rtc tps65910-rtc: rtc core: registered tps65910 as rtc0
+[    0.343974] tps65910_rtc_probe:ok
+[    0.344045] Switching to clocksource timer1
+[    0.344220] boot with tps65910 need  pwm_regultor
+[    0.344274] pwm_regulator_probe:n_voltages=17
+[    0.344431] pwm_regulator.0: driver initialized
+[    0.344452] rk30 pwm regulator is ok with pmu tps65910
+[    0.351911] Switched to NOHz mode on CPU #0
+[    0.352364] Switched to NOHz mode on CPU #1
+[    0.354504] pwm_regulator_probe set vdd_core=1100000mV end
+[    0.361283] NET: Registered protocol family 2
+[    0.361426] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.361779] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.363629] TCP bind hash table entries: 65536 (order: 7, 786432 bytes)
+[    0.364685] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.364711] TCP reno registered
+[    0.364733] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.364782] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.365149] NET: Registered protocol family 1
+[    0.365328] RK29 Backlight Driver Initialized.
+[    0.385810] rk30-tsadc rk30-tsadc: initialized
+[    0.385953] DVFS ERR:	WARNING: clk_enable_dvfs table all value are smaller than default, use default, just enable dvfs
+[    0.385995] DVFS ERR:	dvfs(ddr) rate 647999999hz is larger,not support
+[    0.387649] [BT_RFKILL]: ret=0x0
+[    0.387764] Loaded driver for PL330 DMAC-1 rk29-pl330
+[    0.387789] 	DBUFF-32x8bytes Num_Chans-6 Num_Peri-12 Num_Events-12
+[    0.387883] Loaded driver for PL330 DMAC-2 rk29-pl330
+[    0.387908] 	DBUFF-64x8bytes Num_Chans-7 Num_Peri-20 Num_Events-14
+[    0.393652] highmem bounce pool size: 64 pages
+[    0.393829] ashmem: initialized
+[    0.400201] fuse init (API version 7.16)
+[    0.400486] msgmni has been set to 1445
+[    0.401419] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    0.401457] io scheduler noop registered
+[    0.401476] io scheduler deadline registered
+[    0.401556] io scheduler cfq registered (default)
+[    0.401579] io scheduler vr registered
+[    0.401597] io scheduler sio registered
+[    0.402017] i2c i2c-2: No ack, Maybe slave(addr: 0x42) not exist or abnormal power-on, retry 2...
+[    0.402393] i2c i2c-2: No ack, Maybe slave(addr: 0x42) not exist or abnormal power-on, retry 1...
+[    0.402763] i2c i2c-2: No ack, Maybe slave(addr: 0x42) not exist or abnormal power-on, retry 0...
+[    0.402799] rk1000_tvout 2-0042: rk1000_tv_control probe error -11
+[    0.402829] rk1000_tvout: probe of 2-0042 failed with error -22
+[    0.408697] rga: Driver loaded succesfully
+[    0.482816] rk_serial.0: ttyS0 at MMIO 0x10124000 (irq = 66) is a rk29_serial.0
+[    0.534120] rk_serial rk_serial.0: membase 0xf7040000
+[    0.534185] rk_serial.3: ttyS3 at MMIO 0x20068000 (irq = 69) is a rk29_serial.3
+[    0.574118] rk_serial rk_serial.3: membase 0xf7048000
+[    0.574519] Rockchip ion module(version: 1.0) is successfully loaded
+[    0.576722] loop: module loaded
+[    0.576780] pmem_cam: 1 init
+[    0.577458] Android kernel panic handler initialized (bind=kpanic)
+[    0.578066] PPP generic driver version 2.4.2
+[    0.578338] PPP Deflate Compression module registered
+[    0.578361] PPP BSD Compression module registered
+[    0.600646] PPP MPPE Compression module registered
+[    0.600864] NET: Registered protocol family 24
+[    0.601408] usbcore: registered new interface driver qf9700
+[    0.601845] usbcore: registered new interface driver sr9600
+[    0.601992] Initializing USB Mass Storage driver...
+[    0.602421] usbcore: registered new interface driver usb-storage
+[    0.602568] USB Mass Storage support registered.
+[    0.603144] usb20_otg usb20_otg: base=0xf7080000
+[    0.603293] usb20_otg usb20_otg: dwc_otg_device=0xee0f4580
+[    0.813975] DWC_OTG: ^^^^^^^^^^^^^^^^^Device Mode
+[    0.813999] usb20_otg usb20_otg: DWC OTG Controller
+[    0.814023] usb20_otg usb20_otg: new USB bus registered, assigned bus number 1
+[    0.814054] usb20_otg usb20_otg: irq 48, io mem 0x00000000
+[    0.814066] DWC_OTG: dwc_otg_hcd_start controller in device mode,everest
+[    0.814117] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    0.814132] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.814147] usb usb1: Product: DWC OTG Controller
+[    0.814157] usb usb1: Manufacturer: Linux 3.0.8-alok+ dwc_otg_hcd
+[    0.814169] usb usb1: SerialNumber: usb20_otg
+[    0.814546] hub 1-0:1.0: USB hub found
+[    0.814567] hub 1-0:1.0: 1 port detected
+[    0.814817] DWC_OTG: host20_driver_probe host2.0 reg addr: 0x101c0000 remap:0xf7100000
+[    1.025044] DWC_OTG: ^^^^^^^^^^^^^^^^^^Host Mode
+[    1.025062] usb20_host usb20_host: DWC OTG Controller
+[    1.025084] usb20_host usb20_host: new USB bus registered, assigned bus number 2
+[    1.025112] usb20_host usb20_host: irq 49, io mem 0x00000000
+[    1.025160] DWC_OTG: Init: Port Power? op_state=1
+[    1.025170] DWC_OTG: Init: Power Port (0)
+[    1.025204] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[    1.025218] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.025233] usb usb2: Product: DWC OTG Controller
+[    1.025243] usb usb2: Manufacturer: Linux 3.0.8-alok+ host20_hcd
+[    1.025254] usb usb2: SerialNumber: usb20_host
+[    1.025580] hub 2-0:1.0: USB hub found
+[    1.025599] hub 2-0:1.0: 1 port detected
+[    1.027219] android_usb gadget: Mass Storage Function, version: 2009/09/11
+[    1.027239] android_usb gadget: Number of LUNs=2
+[    1.027250]  lun0: LUN: removable file: (no medium)
+[    1.027261]  lun1: LUN: removable file: (no medium)
+[    1.027452] android_usb gadget: android_usb ready
+[    1.027593] input: rk29-keypad as /devices/platform/rk29-keypad/input/input0
+[    1.028164] ++++++++remotectl_init
+[    1.028196] ++++++++remotectl_probe
+[    1.028226] remotectl probe j=0x0
+[    1.028237] remotectl probe j=0x1
+[    1.028336] input: rkxx-remotectl as /devices/platform/rkxx-remotectl/input/input1
+[    1.028629] using rtc device, tps65910, for alarms
+[    1.028897] lirc_dev: IR Remote Control driver registered, major 251 
+[    1.028915] IR NEC protocol handler initialized
+[    1.028925] IR RC5(x) protocol handler initialized
+[    1.028934] IR RC6 protocol handler initialized
+[    1.028943] IR JVC protocol handler initialized
+[    1.028953] IR Sony protocol handler initialized
+[    1.028962] IR RC5 (streamzap) protocol handler initialized
+[    1.028972] IR LIRC bridge handler initialized
+[    1.028981] Linux video capture interface: v2.00
+[    1.029134] usbcore: registered new interface driver uvcvideo
+[    1.029147] USB Video Class driver (v1.1.0)
+[    1.029676] device-mapper: uevent: version 1.0.3
+[    1.029957] device-mapper: ioctl: 4.20.0-ioctl (2011-02-02) initialised: dm-devel@redhat.com
+[    1.030227] [imoseyon] interactiveX enter
+[    1.030369] cpuidle: using governor ladder
+[    1.030382] cpuidle: using governor menu
+[    1.095957] 
+[    1.095959] /home/fede/picuntu/myrepo/picuntu-3.0.8-alok/drivers/mmc/core/core.c...1827..  ===== mmc_rescan Begin....[mmc0]
+[    1.095979] .Line3931..The End of SDMMC-probe Ver.4.09 The last modify date is 2012-10-12.  [sd_mmc]
+[    1.096082] .Line3931..The End of SDMMC-probe Ver.4.09 The last modify date is 2012-10-12.  [sdio]
+[    1.097020] usbcore: registered new interface driver usbhid
+[    1.097033] usbhid: USB HID core driver
+[    1.097443] logger: created 256K log 'log_main'
+[    1.097560] logger: created 256K log 'log_events'
+[    1.097672] logger: created 256K log 'log_radio'
+[    1.097779] logger: created 256K log 'log_system'
+[    1.098606] i2c i2c-2: No ack, Maybe slave(addr: 0x7d) not exist or abnormal power-on, retry 2...
+[    1.098852] i2c i2c-2: No ack, Maybe slave(addr: 0x7d) not exist or abnormal power-on, retry 1...
+[    1.099093] i2c i2c-2: No ack, Maybe slave(addr: 0x7d) not exist or abnormal power-on, retry 0...
+[    1.099334] i2c i2c-2: No ack, Maybe slave(addr: 0x77) not exist or abnormal power-on, retry 2...
+[    1.099574] i2c i2c-2: No ack, Maybe slave(addr: 0x77) not exist or abnormal power-on, retry 1...
+[    1.099814] i2c i2c-2: No ack, Maybe slave(addr: 0x77) not exist or abnormal power-on, retry 0...
+[    1.100054] i2c i2c-2: No ack, Maybe slave(addr: 0x78) not exist or abnormal power-on, retry 2...
+[    1.100294] i2c i2c-2: No ack, Maybe slave(addr: 0x78) not exist or abnormal power-on, retry 1...
+[    1.100533] i2c i2c-2: No ack, Maybe slave(addr: 0x78) not exist or abnormal power-on, retry 0...
+[    1.100773] i2c i2c-2: No ack, Maybe slave(addr: 0x79) not exist or abnormal power-on, retry 2...
+[    1.101013] i2c i2c-2: No ack, Maybe slave(addr: 0x79) not exist or abnormal power-on, retry 1...
+[    1.101035] rk29_sdmmc_change_clk_div..1945..  newDiv=83, newCLK=298Khz [sd_mmc]
+[    1.101253] i2c i2c-2: No ack, Maybe slave(addr: 0x79) not exist or abnormal power-on, retry 0...
+[    1.101496] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 2...
+[    1.101736] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 1...
+[    1.101976] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 0...
+[    1.112230] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 2...
+[    1.112470] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 1...
+[    1.112710] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 0...
+[    1.112951] i2c i2c-2: No ack, Maybe slave(addr: 0x79) not exist or abnormal power-on, retry 2...
+[    1.113191] i2c i2c-2: No ack, Maybe slave(addr: 0x79) not exist or abnormal power-on, retry 1...
+[    1.113430] i2c i2c-2: No ack, Maybe slave(addr: 0x79) not exist or abnormal power-on, retry 0...
+[    1.113670] i2c i2c-2: No ack, Maybe slave(addr: 0x75) not exist or abnormal power-on, retry 2...
+[    1.113910] i2c i2c-2: No ack, Maybe slave(addr: 0x75) not exist or abnormal power-on, retry 1...
+[    1.114210] i2c i2c-2: No ack, Maybe slave(addr: 0x75) not exist or abnormal power-on, retry 0...
+[    1.114466] i2c i2c-2: No ack, Maybe slave(addr: 0x7a) not exist or abnormal power-on, retry 2...
+[    1.114717] i2c i2c-2: No ack, Maybe slave(addr: 0x7a) not exist or abnormal power-on, retry 1...
+[    1.114967] i2c i2c-2: No ack, Maybe slave(addr: 0x7a) not exist or abnormal power-on, retry 0...
+[    1.138388] 
+[    1.138390] mmc_attach_sd..1218..  ===== Begin to identify card as SD-card. [mmc0]
+[    1.166387] rk29_sdmmc_change_clk_div..1945..  newDiv=0, newCLK=49500Khz [sd_mmc]
+[    1.166451] mmc0: new high speed SD card at address b368
+[    1.166698] mmcblk0: mmc0:b368 USD   958 MiB 
+[    1.167466] 
+[    1.167468] msdos_partition..461... ==== Begin to parse sdcard-partition.  [mmc0]
+[    1.167490] msdos_partition..530... ==== The sdcard has MBR. [mmc0]
+[    1.167504] msdos_partition..543... ==== partition-1, size=980864KB  [mmc0]
+[    1.167517] msdos_partition..571... ==== main partition-1....[mmc0]
+[    1.167530]  mmcblk0: p1
+[    1.167767] mmc_rescan_try_freq..1721..  ===== Initialize SD-card successfully. [mmc0]
+[    1.167791] 
+[    1.167793] /home/fede/picuntu/myrepo/picuntu-3.0.8-alok/drivers/mmc/core/core.c...1827..  ===== mmc_rescan Begin....[mmc1]
+[    1.167816] 
+[    1.167818] =================
+[    1.167820] mmc_rescan..1834..  ====find no SDMMC host. [mmc1]
+[    1.215530] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 2...
+[    1.215774] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 1...
+[    1.216015] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 0...
+[    1.216256] i2c i2c-2: No ack, Maybe slave(addr: 0x7e) not exist or abnormal power-on, retry 2...
+[    1.216496] i2c i2c-2: No ack, Maybe slave(addr: 0x7e) not exist or abnormal power-on, retry 1...
+[    1.216736] i2c i2c-2: No ack, Maybe slave(addr: 0x7e) not exist or abnormal power-on, retry 0...
+[    1.226991] i2c i2c-2: No ack, Maybe slave(addr: 0x7a) not exist or abnormal power-on, retry 2...
+[    1.227232] i2c i2c-2: No ack, Maybe slave(addr: 0x7a) not exist or abnormal power-on, retry 1...
+[    1.227472] i2c i2c-2: No ack, Maybe slave(addr: 0x7a) not exist or abnormal power-on, retry 0...
+[    1.227713] i2c i2c-2: No ack, Maybe slave(addr: 0x7d) not exist or abnormal power-on, retry 2...
+[    1.227953] i2c i2c-2: No ack, Maybe slave(addr: 0x7d) not exist or abnormal power-on, retry 1...
+[    1.228192] i2c i2c-2: No ack, Maybe slave(addr: 0x7d) not exist or abnormal power-on, retry 0...
+[    1.228433] i2c i2c-2: No ack, Maybe slave(addr: 0x77) not exist or abnormal power-on, retry 2...
+[    1.228672] i2c i2c-2: No ack, Maybe slave(addr: 0x77) not exist or abnormal power-on, retry 1...
+[    1.228912] i2c i2c-2: No ack, Maybe slave(addr: 0x77) not exist or abnormal power-on, retry 0...
+[    1.229152] i2c i2c-2: No ack, Maybe slave(addr: 0x78) not exist or abnormal power-on, retry 2...
+[    1.229392] i2c i2c-2: No ack, Maybe slave(addr: 0x78) not exist or abnormal power-on, retry 1...
+[    1.229632] i2c i2c-2: No ack, Maybe slave(addr: 0x78) not exist or abnormal power-on, retry 0...
+[    1.229872] i2c i2c-2: No ack, Maybe slave(addr: 0x79) not exist or abnormal power-on, retry 2...
+[    1.230112] i2c i2c-2: No ack, Maybe slave(addr: 0x79) not exist or abnormal power-on, retry 1...
+[    1.230352] i2c i2c-2: No ack, Maybe slave(addr: 0x79) not exist or abnormal power-on, retry 0...
+[    1.230592] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 2...
+[    1.230831] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 1...
+[    1.231071] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 0...
+[    1.231312] i2c i2c-2: No ack, Maybe slave(addr: 0x64) not exist or abnormal power-on, retry 2...
+[    1.231551] i2c i2c-2: No ack, Maybe slave(addr: 0x64) not exist or abnormal power-on, retry 1...
+[    1.231791] i2c i2c-2: No ack, Maybe slave(addr: 0x64) not exist or abnormal power-on, retry 0...
+[    1.232031] i2c i2c-2: No ack, Maybe slave(addr: 0x6a) not exist or abnormal power-on, retry 2...
+[    1.232271] i2c i2c-2: No ack, Maybe slave(addr: 0x6a) not exist or abnormal power-on, retry 1...
+[    1.232511] i2c i2c-2: No ack, Maybe slave(addr: 0x6a) not exist or abnormal power-on, retry 0...
+[    1.232751] i2c i2c-2: No ack, Maybe slave(addr: 0x69) not exist or abnormal power-on, retry 2...
+[    1.232991] i2c i2c-2: No ack, Maybe slave(addr: 0x69) not exist or abnormal power-on, retry 1...
+[    1.233231] i2c i2c-2: No ack, Maybe slave(addr: 0x69) not exist or abnormal power-on, retry 0...
+[    1.233471] i2c i2c-2: No ack, Maybe slave(addr: 0x60) not exist or abnormal power-on, retry 2...
+[    1.233711] i2c i2c-2: No ack, Maybe slave(addr: 0x60) not exist or abnormal power-on, retry 1...
+[    1.233951] i2c i2c-2: No ack, Maybe slave(addr: 0x60) not exist or abnormal power-on, retry 0...
+[    1.234194] i2c i2c-2: No ack, Maybe slave(addr: 0x65) not exist or abnormal power-on, retry 2...
+[    1.234443] i2c i2c-2: No ack, Maybe slave(addr: 0x65) not exist or abnormal power-on, retry 1...
+[    1.234689] i2c i2c-2: No ack, Maybe slave(addr: 0x65) not exist or abnormal power-on, retry 0...
+[    1.234935] i2c i2c-2: No ack, Maybe slave(addr: 0x66) not exist or abnormal power-on, retry 2...
+[    1.235181] i2c i2c-2: No ack, Maybe slave(addr: 0x66) not exist or abnormal power-on, retry 1...
+[    1.235450] i2c i2c-2: No ack, Maybe slave(addr: 0x66) not exist or abnormal power-on, retry 0...
+[    1.235698] i2c i2c-2: No ack, Maybe slave(addr: 0x67) not exist or abnormal power-on, retry 2...
+[    1.235944] i2c i2c-2: No ack, Maybe slave(addr: 0x67) not exist or abnormal power-on, retry 1...
+[    1.236190] i2c i2c-2: No ack, Maybe slave(addr: 0x67) not exist or abnormal power-on, retry 0...
+[    1.236435] i2c i2c-2: No ack, Maybe slave(addr: 0x68) not exist or abnormal power-on, retry 2...
+[    1.236681] i2c i2c-2: No ack, Maybe slave(addr: 0x68) not exist or abnormal power-on, retry 1...
+[    1.236926] i2c i2c-2: No ack, Maybe slave(addr: 0x68) not exist or abnormal power-on, retry 0...
+[    1.237171] i2c i2c-2: No ack, Maybe slave(addr: 0x6c) not exist or abnormal power-on, retry 2...
+[    1.237416] i2c i2c-2: No ack, Maybe slave(addr: 0x6c) not exist or abnormal power-on, retry 1...
+[    1.237661] i2c i2c-2: No ack, Maybe slave(addr: 0x6c) not exist or abnormal power-on, retry 0...
+[    1.237906] i2c i2c-2: No ack, Maybe slave(addr: 0x6d) not exist or abnormal power-on, retry 2...
+[    1.238152] i2c i2c-2: No ack, Maybe slave(addr: 0x6d) not exist or abnormal power-on, retry 1...
+[    1.238396] i2c i2c-2: No ack, Maybe slave(addr: 0x6d) not exist or abnormal power-on, retry 0...
+[    1.238642] i2c i2c-2: No ack, Maybe slave(addr: 0x6e) not exist or abnormal power-on, retry 2...
+[    1.238887] i2c i2c-2: No ack, Maybe slave(addr: 0x6e) not exist or abnormal power-on, retry 1...
+[    1.239132] i2c i2c-2: No ack, Maybe slave(addr: 0x6e) not exist or abnormal power-on, retry 0...
+[    1.239377] i2c i2c-2: No ack, Maybe slave(addr: 0x72) not exist or abnormal power-on, retry 2...
+[    1.239622] i2c i2c-2: No ack, Maybe slave(addr: 0x72) not exist or abnormal power-on, retry 1...
+[    1.239867] i2c i2c-2: No ack, Maybe slave(addr: 0x72) not exist or abnormal power-on, retry 0...
+[    1.240113] i2c i2c-2: No ack, Maybe slave(addr: 0x73) not exist or abnormal power-on, retry 2...
+[    1.240358] i2c i2c-2: No ack, Maybe slave(addr: 0x73) not exist or abnormal power-on, retry 1...
+[    1.240603] i2c i2c-2: No ack, Maybe slave(addr: 0x73) not exist or abnormal power-on, retry 0...
+[    1.240848] i2c i2c-2: No ack, Maybe slave(addr: 0x74) not exist or abnormal power-on, retry 2...
+[    1.241093] i2c i2c-2: No ack, Maybe slave(addr: 0x74) not exist or abnormal power-on, retry 1...
+[    1.241338] i2c i2c-2: No ack, Maybe slave(addr: 0x74) not exist or abnormal power-on, retry 0...
+[    1.241583] i2c i2c-2: No ack, Maybe slave(addr: 0x6b) not exist or abnormal power-on, retry 2...
+[    1.241828] i2c i2c-2: No ack, Maybe slave(addr: 0x6b) not exist or abnormal power-on, retry 1...
+[    1.242073] i2c i2c-2: No ack, Maybe slave(addr: 0x6b) not exist or abnormal power-on, retry 0...
+[    1.242318] i2c i2c-2: No ack, Maybe slave(addr: 0x75) not exist or abnormal power-on, retry 2...
+[    1.242563] i2c i2c-2: No ack, Maybe slave(addr: 0x75) not exist or abnormal power-on, retry 1...
+[    1.242807] i2c i2c-2: No ack, Maybe slave(addr: 0x75) not exist or abnormal power-on, retry 0...
+[    1.243053] i2c i2c-2: No ack, Maybe slave(addr: 0x7b) not exist or abnormal power-on, retry 2...
+[    1.243297] i2c i2c-2: No ack, Maybe slave(addr: 0x7b) not exist or abnormal power-on, retry 1...
+[    1.243542] i2c i2c-2: No ack, Maybe slave(addr: 0x7b) not exist or abnormal power-on, retry 0...
+[    1.243787] i2c i2c-2: No ack, Maybe slave(addr: 0x7c) not exist or abnormal power-on, retry 2...
+[    1.244032] i2c i2c-2: No ack, Maybe slave(addr: 0x7c) not exist or abnormal power-on, retry 1...
+[    1.244278] i2c i2c-2: No ack, Maybe slave(addr: 0x7c) not exist or abnormal power-on, retry 0...
+[    1.244525] i2c i2c-2: No ack, Maybe slave(addr: 0x77) not exist or abnormal power-on, retry 2...
+[    1.244770] i2c i2c-2: No ack, Maybe slave(addr: 0x77) not exist or abnormal power-on, retry 1...
+[    1.245015] i2c i2c-2: No ack, Maybe slave(addr: 0x77) not exist or abnormal power-on, retry 0...
+[    1.245260] i2c i2c-2: No ack, Maybe slave(addr: 0x78) not exist or abnormal power-on, retry 2...
+[    1.245506] i2c i2c-2: No ack, Maybe slave(addr: 0x78) not exist or abnormal power-on, retry 1...
+[    1.245750] i2c i2c-2: No ack, Maybe slave(addr: 0x78) not exist or abnormal power-on, retry 0...
+[    1.245998] i2c i2c-2: No ack, Maybe slave(addr: 0x7d) not exist or abnormal power-on, retry 2...
+[    1.246243] i2c i2c-2: No ack, Maybe slave(addr: 0x7d) not exist or abnormal power-on, retry 1...
+[    1.246489] i2c i2c-2: No ack, Maybe slave(addr: 0x7d) not exist or abnormal power-on, retry 0...
+[    1.246734] i2c i2c-2: No ack, Maybe slave(addr: 0x7e) not exist or abnormal power-on, retry 2...
+[    1.246979] i2c i2c-2: No ack, Maybe slave(addr: 0x7e) not exist or abnormal power-on, retry 1...
+[    1.247224] i2c i2c-2: No ack, Maybe slave(addr: 0x7e) not exist or abnormal power-on, retry 0...
+[    1.247469] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 2...
+[    1.247714] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 1...
+[    1.247959] i2c i2c-2: No ack, Maybe slave(addr: 0x7f) not exist or abnormal power-on, retry 0...
+[    1.248204] i2c i2c-2: No ack, Maybe slave(addr: 0x6b) not exist or abnormal power-on, retry 2...
+[    1.248449] i2c i2c-2: No ack, Maybe slave(addr: 0x6b) not exist or abnormal power-on, retry 1...
+[    1.248694] i2c i2c-2: No ack, Maybe slave(addr: 0x6b) not exist or abnormal power-on, retry 0...
+[    1.248940] i2c i2c-2: No ack, Maybe slave(addr: 0x75) not exist or abnormal power-on, retry 2...
+[    1.249184] i2c i2c-2: No ack, Maybe slave(addr: 0x75) not exist or abnormal power-on, retry 1...
+[    1.249429] i2c i2c-2: No ack, Maybe slave(addr: 0x75) not exist or abnormal power-on, retry 0...
+[    1.249675] i2c i2c-2: No ack, Maybe slave(addr: 0x6c) not exist or abnormal power-on, retry 2...
+[    1.249920] i2c i2c-2: No ack, Maybe slave(addr: 0x6c) not exist or abnormal power-on, retry 1...
+[    1.250164] i2c i2c-2: No ack, Maybe slave(addr: 0x6c) not exist or abnormal power-on, retry 0...
+[    1.250410] i2c i2c-2: No ack, Maybe slave(addr: 0x6d) not exist or abnormal power-on, retry 2...
+[    1.250655] i2c i2c-2: No ack, Maybe slave(addr: 0x6d) not exist or abnormal power-on, retry 1...
+[    1.250900] i2c i2c-2: No ack, Maybe slave(addr: 0x6d) not exist or abnormal power-on, retry 0...
+[    1.251145] i2c i2c-2: No ack, Maybe slave(addr: 0x6e) not exist or abnormal power-on, retry 2...
+[    1.251390] i2c i2c-2: No ack, Maybe slave(addr: 0x6e) not exist or abnormal power-on, retry 1...
+[    1.251635] i2c i2c-2: No ack, Maybe slave(addr: 0x6e) not exist or abnormal power-on, retry 0...
+[    1.251880] i2c i2c-2: No ack, Maybe slave(addr: 0x72) not exist or abnormal power-on, retry 2...
+[    1.252125] i2c i2c-2: No ack, Maybe slave(addr: 0x72) not exist or abnormal power-on, retry 1...
+[    1.252370] i2c i2c-2: No ack, Maybe slave(addr: 0x72) not exist or abnormal power-on, retry 0...
+[    1.252615] i2c i2c-2: No ack, Maybe slave(addr: 0x73) not exist or abnormal power-on, retry 2...
+[    1.252860] i2c i2c-2: No ack, Maybe slave(addr: 0x73) not exist or abnormal power-on, retry 1...
+[    1.253105] i2c i2c-2: No ack, Maybe slave(addr: 0x73) not exist or abnormal power-on, retry 0...
+[    1.253350] i2c i2c-2: No ack, Maybe slave(addr: 0x74) not exist or abnormal power-on, retry 2...
+[    1.253596] i2c i2c-2: No ack, Maybe slave(addr: 0x74) not exist or abnormal power-on, retry 1...
+[    1.253841] i2c i2c-2: No ack, Maybe slave(addr: 0x74) not exist or abnormal power-on, retry 0...
+[    1.254099] i2c i2c-2: No ack, Maybe slave(addr: 0x7c) not exist or abnormal power-on, retry 2...
+[    1.254348] i2c i2c-2: No ack, Maybe slave(addr: 0x7c) not exist or abnormal power-on, retry 1...
+[    1.254596] i2c i2c-2: No ack, Maybe slave(addr: 0x7c) not exist or abnormal power-on, retry 0...
+[    1.254624] RK1000_CODEC 2-0060: Failed to add route LOUT1->Audio Out
+[    1.255105] asoc: rk1000_codec <-> rk29_i2s.0 mapping ok
+[    1.256023] asoc: hdmi-audio-codec <-> rk29_i2s.0 mapping ok
+[    1.256431] ALSA device list:
+[    1.256444]   #0: RK29_RK1000
+[    1.256454]   #1: ROCKCHIP HDMI
+[    1.256534] GACT probability NOT on
+[    1.256549] Mirror/redirect action on
+[    1.256560] u32 classifier
+[    1.256568]     Actions configured
+[    1.256579] Netfilter messages via NETLINK v0.30.
+[    1.256618] nf_conntrack version 0.5.0 (13999 buckets, 55996 max)
+[    1.256936] ctnetlink v0.93: registering with nfnetlink.
+[    1.256971] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+[    1.256986] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+[    1.257264] xt_time: kernel timezone is -0000
+[    1.257390] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    1.257507] arp_tables: (C) 2002 David S. Miller
+[    1.257553] TCP cubic registered
+[    1.257947] NET: Registered protocol family 10
+[    1.258455] Mobile IPv6
+[    1.258486] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    1.258581] IPv6 over IPv4 tunneling driver
+[    1.259102] NET: Registered protocol family 17
+[    1.259133] NET: Registered protocol family 15
+[    1.259216] Bridge firewalling registered
+[    1.259250] NET: Registered protocol family 35
+[    1.259378] lib80211: common routines for IEEE802.11 drivers
+[    1.259394] lib80211_crypt: registered algorithm 'NULL'
+[    1.259407] Registering the dns_resolver key type
+[    1.259528] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    1.259661] rk_cam_io: sensor-5 have not been define in board file!
+[    1.259676] rk_cam_io: sensor-5 have not been define in board file!
+[    1.259691] rk_cam_io: sensor-5 have not been define in board file!
+[    1.259705] rk_cam_io: sensor-5 have not been define in board file!
+[    1.259719] rk_cam_io: sensor-5 have not been define in board file!
+[    1.259732] rk_cam_io: sensor-5 have not been define in board file!
+[    1.259745] rk_cam_io: sensor-5 have not been define in board file!
+[    1.259761] 
+[    1.259763] rk_camera_probe Memory(start:0x90800000 size:0x800000) for IPP obtain 
+[    1.261591] camera 34-0-ov5642_back: RK Camera driver attached to camera0(ov5642_back)
+[    1.261627] rk_camera_add_device..1008.. 
+[    1.264325] camera 34-0-ov5642_back: RK Camera driver detached from camera0(ov5642_back)
+[    1.274126] tps65910-rtc tps65910-rtc: setting system clock to 2013-06-07 21:07:31 UTC (1370639251)
+[    1.274360] usbcore: registered new interface driver snd-usb-audio
+[    1.274396] Warning: unable to open an initial console.
+[    1.274756] Freeing init memory: 3804K
+[    1.325083] udevd[90]: starting version 175
+[    1.640701] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null)
+[    1.895240] camera 34-0-ov5642_back: Probe ov5642_back failed
+[    1.896476] camera 34-1-gc2035_back_2: RK Camera driver attached to camera1(gc2035_back_2)
+[    1.896511] rk_camera_add_device..1008.. 
+[    2.094119] rk30_i2c rk30_i2c.4: Addr[0x3c] wait event timeout, state: 0, is_busy: 1, error: 0, complete_what: 0x0, ipd: 0x0
+[    2.114112] rk30_i2c rk30_i2c.4: I2C_CON: start bit is set
+[    2.134127] 
+[    2.134129]  gc2035 read reg(0xf0 val:0x0) failed, try to read again! 
+[    2.144431] Ciarico DWC COMMON
+[    2.147555] dwc_common_port_lib: version magic '3.0.8+ SMP preempt mod_unload ARMv7 ' should be '3.0.8-alok+ SMP preempt mod_unload ARMv7 '
+[    2.147615] Ciarico DWC HOSTFatto WC HOST
+[    2.157983] android_usb: already disabled
+[    2.181199] adb_open
+[    2.334136] rk30_i2c rk30_i2c.4: Addr[0x3c] wait event timeout, state: 0, is_busy: 1, error: 0, complete_what: 0x2, ipd: 0x20
+[    2.374147] 
+[    2.374151]  gc2035 read reg(0xf0 val:0x0) failed, try to read again! 
+[    2.574344] rk30_i2c rk30_i2c.4: Addr[0x3c] wait event timeout, state: 0, is_busy: 1, error: 0, complete_what: 0x2, ipd: 0x20
+[    2.614306] 
+[    2.614329]  gc2035 read reg(0xf0 val:0x0) failed, try to read again! 
+[    2.614532] read chip id high byte failed
+[    2.615123] camera 34-1-gc2035_back_2: RK Camera driver detached from camera1(gc2035_back_2)
+[    3.116126] camera 34-1-gc2035_back_2: Probe gc2035_back_2 failed
+[    3.116188] 
+[    3.116190] rk_camera_probe Memory(start:0x90800000 size:0x800000) for IPP obtain 
+[    3.117491] camera 33-0-ov2659_front: RK Camera driver attached to camera0(ov2659_front)
+[    3.117522] rk_camera_add_device..1008.. 
+[    3.133930] camera 33-0-ov2659_front: RK Camera driver detached from camera0(ov2659_front)
+[    3.634290] camera 33-0-ov2659_front: Probe ov2659_front failed
+[    3.635520] camera 33-1-gc2035_front_2: RK Camera driver attached to camera1(gc2035_front_2)
+[    3.635553] rk_camera_add_device..1008.. 
+[    3.834315] rk30_i2c rk30_i2c.3: Addr[0x3c] wait event timeout, state: 0, is_busy: 1, error: 0, complete_what: 0x0, ipd: 0x0
+[    3.854285] rk30_i2c rk30_i2c.3: I2C_CON: start bit is set
+[    3.874322] 
+[    3.874345]  gc2035 read reg(0xf0 val:0x0) failed, try to read again! 
+[    4.074324] rk30_i2c rk30_i2c.3: Addr[0x3c] wait event timeout, state: 0, is_busy: 1, error: 0, complete_what: 0x2, ipd: 0x20
+[    4.094311] rk30_i2c rk30_i2c.3: I2C_CON: start bit is set
+[    4.114327] 
+[    4.114349]  gc2035 read reg(0xf0 val:0x0) failed, try to read again! 
+[    4.314320] rk30_i2c rk30_i2c.3: Addr[0x3c] wait event timeout, state: 0, is_busy: 1, error: 0, complete_what: 0x2, ipd: 0x20
+[    4.334277] rk30_i2c rk30_i2c.3: I2C_CON: start bit is set
+[    4.354323] 
+[    4.354345]  gc2035 read reg(0xf0 val:0x0) failed, try to read again! 
+[    4.354545] read chip id high byte failed
+[    4.355293] camera 33-1-gc2035_front_2: RK Camera driver detached from camera1(gc2035_front_2)
+[    4.856095] camera 33-1-gc2035_front_2: Probe gc2035_front_2 failed
+[    9.044205] DWC_OTG: dwc_otg_hcd_connect_detect schedule delaywork, hprt 0x00001000, grfstatus 0x00000000
+[    9.124331] DWC_OTG: dwc_otg_hcd_enable, disable host controller
+[    9.124506] DWC_OTG: PortPower off
+[   16.844151] DWC_OTG: ********vbus detect*********************************************
+[   17.028917] DWC_OTG: ********soft connect!!!*****************************************
+[   17.034925] DWC_OTG: USB SUSPEND
+[   17.153409] DWC_OTG: USB RESET
+[   17.266013] android_work: sent uevent USB_STATE=CONNECTED
+[   17.269097] DWC_OTG: USB RESET
+[   17.398772] android_usb gadget: high speed config #1: android
+[   17.399513] android_work: sent uevent USB_STATE=CONFIGURED
+[   21.484558] adbd (173): /proc/173/oom_adj is deprecated, please use /proc/173/oom_score_adj instead.
+
+insmod wlan_mt6620.ko
+[   34.721381] initWlan
+[   34.722767] rk29sdk_wifi_power: 0
+[   34.923777] wifi shut off power
+[   35.133934] rk29sdk_wifi_power: 1
+[   35.249010] wifi turn on power
+[   35.449098] rk29sdk_wifi_set_carddetect:1
+[   35.449110] mmc1: slot status change detected(0-1)
+[   35.449154] rk29_sdmmc_change_clk_div..1945..  newDiv=42, newCLK=294Khz [sdio]
+[   35.644324] 
+[   35.644348] /home/fede/picuntu/myrepo/picuntu-3.0.8-alok/drivers/mmc/core/core.c...1827..  ===== mmc_rescan Begin....[mmc1]
+[   35.688536] 
+[   35.688559] mmc_attach_sdio..800..  ===== Begin to identify card as SDIO-card. [mmc1]
+[   35.721274] rk29_sdmmc_change_clk_div..1945..  newDiv=0, newCLK=24750Khz [sdio]
+[   35.725885] mmc1: new high speed SDIO card at address 0001
+[   35.728140] wireless_dev prWdev(0xed9bd600) allocated
+[   35.728343] wiphy (0xed522120) allocated
+[   35.728632] net_device prDev(0xedb1c000) allocated
+[   35.731273] Open FW image: WIFI_RAM_CODE done
+[   35.748618] Allocating 4096 bytes for COMMON MGMT MEMORY POOL.
+[   35.748851] Virtual Address = f700d000 for COMMON MGMT MEMORY POOL.
+[   35.749007] Allocating 11136 bytes for SW_RFB_T.
+[   35.749201] Virtual Address = f7073000 for SW_RFB_T.
+[   35.749332] Allocating 13312 bytes for MSDU_INFO_T.
+[   35.749493] Virtual Address = f7077000 for MSDU_INFO_T.
+[   35.874450] u4Value:2560
+[   36.030709] Using embedded MAC address[wifi] wlan%d netif_carrier_off
+[   36.033261] tx_thread starts running... 
+[   36.035461] MAC address: 00:0c:e7:b0:29:63
+[   36.043576] mmc_rescan_try_freq..1678..  ===== Initialize SDIO successfully. [mmc1]
+[  251.072266] ioctl 8b0b
+[  251.072456] -48940 CMD:0x8b0b
+[  251.072988] ioctl 8b18
+[  251.073142] -48940 CMD:0x8b18
+
+iwlist wlan0 scan
+[  251.324407] ioctl 8b19
+[  251.324430] -48680 CMD:0x8b19
+[  251.379773] NAF=0,0,0
+[  292.810005] ioctl 8b1a
+[  292.810029] -7200 CMD:0x8b1a
+[  292.810061] wext_set_essid: NETNI (5)
+[  292.810179] set essid 0
+[  292.824842] NAF=0,0,0
+[  293.170676] ChReq net=0 token=1 b=1 c=8 s=0
+
+iwconfig wlan0 essid NETNI
+[  293.172527] ChGrant net=0 token=1 ch=8 sco=0
+[  300.164301] mmc_wait_for_req..267.. !!!!! wait for CMD53 timeout [mmc1]
+[  300.164506] sdio_writesb() reports error: fffffffbHAL_PORT_WR access fail! 0x2c
+[  300.164853] QM: Enter qmFlushStaTxQueues(0)
+[  300.164977] QM: -STA[0]
+[  300.165073] ChAbort net=0 token=1
+
+iwconfig wlan0
+[  364.944961] ioctl 8b01
+[  364.945092] 64940 CMD:0x8b01
+[  364.945214] ioctl 8b03
+[  364.945303] 64940 CMD:0x8b03
+[  364.945409] ioctl 8b05
+[  364.945494] 64940 CMD:0x8b05
+[  364.945600] ioctl 8b2b
+[  364.945685] 64940 CMD:0x8b2b
+[  364.945913] ioctl 8b1b
+[  364.946009] 64940 CMD:0x8b1b
+[  364.946332] ioctl 8b07
+[  364.946431] 64940 CMD:0x8b07
+[  364.946669] ioctl 8b0b
+[  364.946766] 64940 CMD:0x8b0b
+[  364.947065] ioctl 8b15
+[  364.947165] 64940 CMD:0x8b15
+[  364.947276] ioctl 8b21
+[  364.947363] 64940 CMD:0x8b21
+[  364.947467] ioctl 8b2d
+[  364.947551] 64940 CMD:0x8b2d
+[  364.947710] ioctl 8b1d
+[  364.947801] 64940 CMD:0x8b1d
+[  364.947907] ioctl 8b27
+[  364.947991] 64940 CMD:0x8b27
+[  364.948095] ioctl 8b09
+[  364.948177] 64940 CMD:0x8b09
+[  364.948278] ioctl 8b29
+[  364.948362] 64940 CMD:0x8b29
+[  364.948463] ioctl 8b23
+[  364.948547] 64940 CMD:0x8b23
+[  364.948751] ioctl 8b25
+[  364.948846] 64940 CMD:0x8b25
+[  419.433820] ioctl 8b0b
+[  419.433953] 119420 CMD:0x8b0b
+[  419.434519] ioctl 8b18
+[  419.434629] 119430 CMD:0x8b18
+[  419.686660] ioctl 8b19
+[  419.686782] 119680 CMD:0x8b19
+[ 1310.482708] EXT4-fs (mmcblk0p1): warning: maximal mount count reached, running e2fsck is recommended
+[ 1310.486730] EXT4-fs (mmcblk0p1): re-mounted. Opts: (null)
