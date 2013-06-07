@@ -1,5 +1,0 @@
-kernel/drivers/bluetooth/vflash.ko
-kernel/drivers/bluetooth/hci_vhci.ko
-kernel/drivers/bluetooth/hci_uart.ko
-kernel/drivers/bluetooth/bcm203x.ko
-kernel/drivers/bluetooth/btusb.ko
